@@ -32,9 +32,9 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		if (savedInstanceState == null) {
-
+			getNumber(getContentResolver());
 		}
-		getNumber(getContentResolver());
+		
 		eText = (EditText) findViewById(R.id.editText1);
 
 		Button sendButton = (Button) findViewById(R.id.btnSubmit);
